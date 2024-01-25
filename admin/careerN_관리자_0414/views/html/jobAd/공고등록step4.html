@@ -1,0 +1,427 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header START -->
+        <header>
+            <div class="grid">
+                <div class="flex-box flex-spc-btw hd-wrap">
+                    <div class="lt"><img src="../../../content/images/common/header-ci.png" alt="기업 로고" class="hd-ci"></div> <!-- //기업 로고 -->
+                    <div class="rt">
+                        <div class="hd-user">
+                            <span class="photo"></span>
+                            <span class="name">홍길동님(슈퍼관리자)</span>
+                        </div>
+                        <div class="hd-btn">
+                            <a href="javascript:void(0);" title="비밀번호 변경" class="btn pw">비밀번호 변경</a>
+                            <a href="javascript:void(0);" title="로그아웃" class="btn"><img src="../../../content/images/common/header-logout.png" alt="로그아웃 아이콘" class="logout-ico"></a>
+                        </div>
+                    </div> <!-- //관리자 정보, 비밀번호 변경, 로그아웃 -->
+                </div>
+            </div> <!-- //grid -->
+        </header>
+        <!-- //header END -->
+        <!-- wrapper START -->
+        <div id="wrapper">
+            <!-- left sidebar nav START -->
+            <aside class="left-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-01.png" alt="대시보드 메뉴 아이콘" class="ico">대시보드</span></a>
+                        </li> <!-- //대시보드 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-02.png" alt="사이트관리 메뉴 아이콘" class="ico">사이트관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="스타일 관리 페이지로 이동" class="subnav-menu"><span class="label">스타일 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="기본 관리 페이지로 이동" class="subnav-menu"><span class="label">기본 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="직무 관리 페이지로 이동" class="subnav-menu"><span class="label">직무 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="팝업 관리 페이지로 이동" class="subnav-menu"><span class="label">팝업 관리</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //사이트관리 -->
+                        <li>
+                            <div class="blue nav-menu on"><span class="label"><img src="../../../content/images/common/nav-ico-03.png" alt="채용 공고 메뉴 아이콘" class="ico">채용 공고</span></div>
+                            <ul class="subnav-list" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원폼 등록 페이지로 이동" class="subnav-menu"><span class="label">지원폼 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 등록 페이지로 이동" class="subnav-menu on"><span class="label">공고 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 리스트 페이지로 이동" class="subnav-menu"><span class="label">공고 리스트</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //채용 공고 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-04.png" alt="서류접수현황 메뉴 아이콘" class="ico">서류접수현황</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공고별 접수현황 페이지로 이동" class="subnav-menu"><span class="label">공고별 접수현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //서류접수현황 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-05.png" alt="전형-서류심사 메뉴 아이콘" class="ico">전형-서류심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류심사 현황 페이지로 이동" class="subnav-menu"><span class="label">서류심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류합격자 페이지로 이동" class="subnav-menu"><span class="label">서류합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-서류심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-06.png" alt="전형-인적성검사 메뉴 아이콘" class="ico">전형-인적성검사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성등록 페이지로 이동" class="subnav-menu"><span class="label">인적성등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성 합격자 페이지로 이동" class="subnav-menu"><span class="label">인적성 합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-인적성검사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-07.png" alt="전형-면접심사 메뉴 아이콘" class="ico">전형-면접심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접심사 현황 페이지로 이동" class="subnav-menu"><span class="label">면접심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접합격자 페이지로 이동" class="subnav-menu"><span class="label">면접합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-면접심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-08.png" alt="전형-추가자료제출 메뉴 아이콘" class="ico">전형-추가자료제출</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료세팅 페이지로 이동" class="subnav-menu"><span class="label">추가자료세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료 등록현황 페이지로 이동" class="subnav-menu"><span class="label">추가자료 등록현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-추가자료제출 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-09.png" alt="전형-최종합격 메뉴 아이콘" class="ico">전형-최종합격</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자세팅 페이지로 이동" class="subnav-menu"><span class="label">최종합격자세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자 페이지로 이동" class="subnav-menu"><span class="label">최종합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="입사취소자 페이지로 이동" class="subnav-menu"><span class="label">입사취소자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-최종합격 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-10.png" alt="게시판관리 메뉴 아이콘" class="ico">게시판관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(사용자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(사용자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(심사자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(심사자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="FAQ 페이지로 이동" class="subnav-menu"><span class="label">FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="1:1문의 페이지로 이동" class="subnav-menu"><span class="label">1:1문의</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용서류반환 페이지로 이동" class="subnav-menu"><span class="label">채용서류반환</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="선배 인터뷰 페이지로 이동" class="subnav-menu"><span class="label">선배 인터뷰</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //게시판관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-11.png" alt="회원관리 메뉴 아이콘" class="ico">회원관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="관리자 관리 페이지로 이동" class="subnav-menu"><span class="label">관리자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="심사자 관리 페이지로 이동" class="subnav-menu"><span class="label">심사자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="전체지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">전체지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="상시지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">상시지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용부적격자 관리 페이지로 이동" class="subnav-menu"><span class="label">채용부적격자</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //회원관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-12.png" alt="기초자료관리 메뉴 아이콘" class="ico">기초자료관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="학교목록 페이지로 이동" class="subnav-menu"><span class="label">학교목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="학과목록 페이지로 이동" class="subnav-menu"><span class="label">학과목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="자격증목록 페이지로 이동" class="subnav-menu"><span class="label">자격증목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="어학/언어목록 페이지로 이동" class="subnav-menu"><span class="label">어학/언어목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="검열단어목록 페이지로 이동" class="subnav-menu"><span class="label">검열단어목록</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //기초자료관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-13.png" alt="통계 메뉴 아이콘" class="ico">통계</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원통계 페이지로 이동" class="subnav-menu"><span class="label">지원통계</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="사이트통계 페이지로 이동" class="subnav-menu"><span class="label">사이트통계</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //통계 -->
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //left sidebar nav END -->
+            <!-- right page area START -->
+            <section class="page-area">
+                <div class="page-wrap">
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw flex-align-cnt pagetit-box">
+                            <h4 class="pagetit">
+                                <span class="label">
+                                    <span class="ico"><img src="../../../content/images/sub/recruitNotice/pagetit-ico.png" alt="공고 등록 아이콘"></span>공고 등록
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="mt0 card-wrap">
+                            <div class="card">
+                                <ul class="flex-box comn-tab-box col4">
+                                    <li><span class="comn-tab"><small class="pr10 fs14 efw500 label">Step 01</small>기본설정</span></li>
+                                    <li><span class="comn-tab"><small class="pr10 fs14 efw500 label">Step 02</small>지원폼 매칭</span></li>
+                                    <li><span class="comn-tab"><small class="pr10 fs14 efw500 label">Step 03</small>공고 내용 세팅</span></li>
+                                    <li><span class="comn-tab on"><small class="pr10 fs14 efw500 label">Step 04</small>등록 완료</span></li>
+                                </ul> <!-- //탭 메뉴 박스 -->
+                                <fieldset>
+                                    <div class="form-wrap">
+                                        <div class="form-row">
+                                            <span class="pt0 form-label">공고명</span>
+                                            <div class="form-field">
+                                                <p class="form-txt">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</p>
+                                            </div>
+                                        </div> <!-- //공고명 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="pt0 form-label">채용 분류</span>
+                                            <div class="form-field">
+                                                <p class="form-txt">신입</p>
+                                            </div>
+                                        </div> <!-- //채용 분류 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="form-label">직무(지원분야)</span>
+                                            <div class="form-field">
+                                                <table class="form-tbl">
+                                                    <colgroup>
+                                                        <col class="w3">
+                                                        <col class="w3">
+                                                        <col class="w3">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>1차 직무명</th>
+                                                        <th>2차 직무명</th>
+                                                        <th>지원폼</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>부동산 / ICT</td>
+                                                        <td>KT</td>
+                                                        <td><a href="javascript:void(0);" target="_blank" title="직무 지원폼 미리보기" class="skyblue btn sm xs-h solidbtn lg-brd">미리보기</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>부동산 / ICT</td>
+                                                        <td>KT estate</td>
+                                                        <td><a href="javascript:void(0);" target="_blank" title="직무 지원폼 미리보기" class="skyblue btn sm xs-h solidbtn lg-brd">미리보기</a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div> <!-- //직무 분야 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="form-label">서류접수일 설정</span>
+                                            <div class="form-field">
+                                                <table class="form-tbl col2">
+                                                    <colgroup>
+                                                        <col class="w2">
+                                                        <col class="w2">
+                                                    </colgroup>
+                                                    <tr>
+                                                        <th>시작일</th>
+                                                        <th>마감일</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2020.03.12 : 10:00</td>
+                                                        <td>2020.03.12 : 19:00 (5분 연장 마감)</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div> <!-- //서류접수일 설정 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="pt0 form-label">알림 설정</span>
+                                            <div class="form-field">
+                                                <p class="form-txt">관리자 접수 알림 : 이메일 / SMS</p>
+                                                <p class="pt5 form-txt">사용자 접수 알림 : 이메일 / SMS</p>
+                                            </div>
+                                        </div> <!-- //알림 설정 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="pt0 form-label">문의 연락처</span>
+                                            <div class="form-field">
+                                                <p class="form-txt">홍길동 매니저 (GENIE MUSIC 채용지원센터)</p>
+                                                <p class="pt5 form-txt">ussay@nhrcomm.com</p>
+                                                <p class="pt5 form-txt">02-458-1400</p>
+                                            </div>
+                                        </div> <!-- //문의 연락처 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="pt0 form-label">공고내용</span>
+                                            <div class="form-field">
+                                                <a href="javascript:void(0);" target="_blank" title="공고내용 미리보기" class="skyblue btn sm xs-h solidbtn lg-brd">미리보기</a>
+                                            </div>
+                                        </div> <!-- //공고내용 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="form-label">공개 여부</span>
+                                            <div class="form-field">
+                                                <label class="form-radio">
+                                                    <input type="radio" name="disclosure" id="open"><span class="label">공개</span>
+                                                </label>
+                                                <label class="form-radio">
+                                                    <input type="radio" name="disclosure" id="notOpen" checked><span class="label">비공개</span>
+                                                </label>
+                                            </div>
+                                        </div> <!-- //공개 여부 -->
+                                        <span class="card-hr"></span>
+                                        <div class="form-row">
+                                            <span class="form-label">오픈 시간</span>
+                                            <div class="form-field">
+                                                <label class="form-radio">
+                                                    <input type="radio" name="opentime" id="openManual" checked><span class="label">수동 선택</span>
+                                                </label>
+                                                <label class="form-radio">
+                                                    <input type="radio" name="opentime" id="openAuto"><span class="label">서류접수 시작일</span>
+                                                </label>
+                                                <div class="form-el col">
+                                                    <input type="text" class="form-input sm"><input type="text" class="form-input sm">
+                                                </div>
+                                            </div>
+                                        </div> <!-- //오픈 시간 -->
+                                    </div>
+                                </fieldset> <!-- //폼 필드 -->
+                                <div class="txt-cnt card-btn-box">
+                                    <a href="공고등록step3.html" title="저장 후 이전 단계로 이동" class="grey btn md md-h solidbtn">저장 후 이전</a>
+                                    <a href="공고등록완료.html" title="공고등록완료 페이지로 이동" class="black btn md md-h solidbtn">등록완료</a>
+                                </div>
+                            </div> <!-- //지원폼 상세 입력폼 -->
+                        </div> <!-- //card wrap : 공고 등록 -->
+                    </div> <!-- //grid -->
+                </div>
+                <!-- footer START -->
+                <footer>
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw ft-wrap">
+                            <div class="lt">
+                                <span class="copyright">COPYRIGHT©NHR COMMUNICATIONS. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="rt">
+                                <span class="ft-info">help-n@nhrcomm.com</span><span class="ft-info">02-735-1141</span>
+                            </div>
+                        </div>
+                    </div> <!-- //grid -->
+                </footer>
+                <!-- //footer END -->
+            </section>
+            <!-- //right page area END -->
+        </div>
+        <!-- //wrapper END -->
+    </body>
+</html>

@@ -1,0 +1,846 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header START -->
+        <header>
+            <div class="grid">
+                <div class="flex-box flex-spc-btw hd-wrap">
+                    <div class="lt"><img src="../../../content/images/common/header-ci.png" alt="기업 로고" class="hd-ci"></div> <!-- //기업 로고 -->
+                    <div class="rt">
+                        <div class="hd-user">
+                            <span class="photo"></span>
+                            <span class="name">홍길동님(슈퍼관리자)</span>
+                        </div>
+                        <div class="hd-btn">
+                            <a href="javascript:void(0);" title="비밀번호 변경" class="btn pw">비밀번호 변경</a>
+                            <a href="javascript:void(0);" title="로그아웃" class="btn"><img src="../../../content/images/common/header-logout.png" alt="로그아웃 아이콘" class="logout-ico"></a>
+                        </div>
+                    </div> <!-- //관리자 정보, 비밀번호 변경, 로그아웃 -->
+                </div>
+            </div> <!-- //grid -->
+        </header>
+        <!-- //header END -->
+        <!-- wrapper START -->
+        <div id="wrapper">
+            <!-- left sidebar nav START -->
+            <aside class="left-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-01.png" alt="대시보드 메뉴 아이콘" class="ico">대시보드</span></a>
+                        </li> <!-- //대시보드 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-02.png" alt="사이트관리 메뉴 아이콘" class="ico">사이트관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="스타일 관리 페이지로 이동" class="subnav-menu"><span class="label">스타일 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="기본 관리 페이지로 이동" class="subnav-menu"><span class="label">기본 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="직무 관리 페이지로 이동" class="subnav-menu"><span class="label">직무 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="팝업 관리 페이지로 이동" class="subnav-menu"><span class="label">팝업 관리</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //사이트관리 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-03.png" alt="채용 공고 메뉴 아이콘" class="ico">채용 공고</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원폼 등록 페이지로 이동" class="subnav-menu"><span class="label">지원폼 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 등록 페이지로 이동" class="subnav-menu"><span class="label">공고 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 리스트 페이지로 이동" class="subnav-menu"><span class="label">공고 리스트</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //채용 공고 -->
+                        <li>
+                            <div class="blue nav-menu on"><span class="label"><img src="../../../content/images/common/nav-ico-04.png" alt="서류접수현황 메뉴 아이콘" class="ico">서류접수현황</span></div>
+                            <ul class="subnav-list" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);" title="공고별 접수현황 페이지로 이동" class="subnav-menu on"><span class="label">공고별 접수현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //서류접수현황 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-05.png" alt="전형-서류심사 메뉴 아이콘" class="ico">전형-서류심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류심사 현황 페이지로 이동" class="subnav-menu"><span class="label">서류심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류합격자 페이지로 이동" class="subnav-menu"><span class="label">서류합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-서류심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-06.png" alt="전형-인적성검사 메뉴 아이콘" class="ico">전형-인적성검사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성등록 페이지로 이동" class="subnav-menu"><span class="label">인적성등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성 합격자 페이지로 이동" class="subnav-menu"><span class="label">인적성 합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-인적성검사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-07.png" alt="전형-면접심사 메뉴 아이콘" class="ico">전형-면접심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접심사 현황 페이지로 이동" class="subnav-menu"><span class="label">면접심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접합격자 페이지로 이동" class="subnav-menu"><span class="label">면접합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-면접심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-08.png" alt="전형-추가자료제출 메뉴 아이콘" class="ico">전형-추가자료제출</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료세팅 페이지로 이동" class="subnav-menu"><span class="label">추가자료세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료 등록현황 페이지로 이동" class="subnav-menu"><span class="label">추가자료 등록현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-추가자료제출 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-09.png" alt="전형-최종합격 메뉴 아이콘" class="ico">전형-최종합격</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자세팅 페이지로 이동" class="subnav-menu"><span class="label">최종합격자세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자 페이지로 이동" class="subnav-menu"><span class="label">최종합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="입사취소자 페이지로 이동" class="subnav-menu"><span class="label">입사취소자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-최종합격 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-10.png" alt="게시판관리 메뉴 아이콘" class="ico">게시판관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(사용자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(사용자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(심사자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(심사자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="FAQ 페이지로 이동" class="subnav-menu"><span class="label">FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="1:1문의 페이지로 이동" class="subnav-menu"><span class="label">1:1문의</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용서류반환 페이지로 이동" class="subnav-menu"><span class="label">채용서류반환</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="선배 인터뷰 페이지로 이동" class="subnav-menu"><span class="label">선배 인터뷰</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //게시판관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-11.png" alt="회원관리 메뉴 아이콘" class="ico">회원관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="관리자 관리 페이지로 이동" class="subnav-menu"><span class="label">관리자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="심사자 관리 페이지로 이동" class="subnav-menu"><span class="label">심사자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="전체지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">전체지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="상시지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">상시지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용부적격자 관리 페이지로 이동" class="subnav-menu"><span class="label">채용부적격자</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //회원관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-12.png" alt="기초자료관리 메뉴 아이콘" class="ico">기초자료관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="학교목록 페이지로 이동" class="subnav-menu"><span class="label">학교목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="학과목록 페이지로 이동" class="subnav-menu"><span class="label">학과목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="자격증목록 페이지로 이동" class="subnav-menu"><span class="label">자격증목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="어학/언어목록 페이지로 이동" class="subnav-menu"><span class="label">어학/언어목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="검열단어목록 페이지로 이동" class="subnav-menu"><span class="label">검열단어목록</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //기초자료관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-13.png" alt="통계 메뉴 아이콘" class="ico">통계</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원통계 페이지로 이동" class="subnav-menu"><span class="label">지원통계</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="사이트통계 페이지로 이동" class="subnav-menu"><span class="label">사이트통계</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //통계 -->
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //left sidebar nav END -->
+            <!-- right page area START -->
+            <section class="page-area">
+                <div class="page-wrap">
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw flex-align-cnt pagetit-box">
+                            <h4 class="pagetit">
+                                <span class="label">
+                                    <span class="ico"><img src="../../../content/images/sub/receptStatus/pagetit-ico.png" alt="지원서 아이콘"></span>2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점) / 신입
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="card-wrap">
+                            <div class="p0 card">
+                                <div class="flex-box flex-spc-btw flex-align-cnt resume-hd-wrap">
+                                    <div class="lt">
+                                        <div class="apply-info-box">
+                                            <div class="blue photo"></div>
+                                            <div class="top">
+                                                <span class="efw500 doc-num">NO. 1-12345678</span>
+                                                <strong class="name">홍*동</strong><span class="name-el">여</span><span class="name-el">23세</span>
+                                            </div>
+                                            <div class="btm">
+                                                <p>영업관리(홈쇼핑) / <mark class="fc-white yellow">채용부적격자</mark> / 중복지원 1회</p>
+                                                <p class="pt10 efw500">010-1234-5678 / NHR@naver.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rt">
+                                        <ul class="flex-box flex-spc-btw apply-edu-box">
+                                            <li>
+                                                <span class="label">최종학교</span><strong>한국기술산업대</strong>
+                                            </li>
+                                            <li>
+                                                <span class="label">최종학위</span><strong>석사</strong>
+                                            </li>
+                                            <li>
+                                                <span class="label">재학상태</span><strong>재학중</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- //상단 지원자 개인정보 -->
+                                <div class="resume-wrap">
+                                    <div class="flex-box flex-spc-cnt resume-tab-box">
+                                        <a href="지원자지원서.html" title="지원자 지원서 보기" class="resume-tab on"><span class="label">지원서</span></a>
+                                        <a href="지원자평가요약.html" title="지원자 평가요약 보기" class="resume-tab"><span class="label">평가요약</span></a>
+                                        <a href="지원자히스토리.html" title="지원자 히스토리 보기" class="resume-tab"><span class="label">히스토리</span></a>
+                                    </div> <!-- //지원서, 평가요약,히스토리 탭 메뉴 박스-->
+                                    <ul class="mt60 flex-box comn-tab-box anchor-tab-box col7">
+                                        <li><span class="comn-tab on">지원정보</span></li>
+                                        <li><span class="comn-tab">인적정보</span></li>
+                                        <li><span class="comn-tab">학력정보</span></li>
+                                        <li><span class="comn-tab">경력사항</span></li>
+                                        <li><span class="comn-tab">수상/자격증/어학</span></li>
+                                        <li><span class="comn-tab">자기소개</span></li>
+                                        <li><span class="comn-tab">추가자료</span></li>
+                                    </ul> <!-- //탭 메뉴 박스 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="0">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-01.png" alt="지원정보 아이콘" class="ico">지원정보</h5>
+                                    </div> <!-- //지원정보 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <dl class="flex-box resume-data">
+                                                <dt>지원 분야 / 직무</dt>
+                                                <dd>신입 ㅣ ICT / 영업관리(홈쇼핑)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>지원경로</dt>
+                                                <dd>기타 (대학내일 지인추천)</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <dl class="flex-box resume-data">
+                                                <dt>희망 연봉(만원)</dt>
+                                                <dd>3,500 (만원)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>직전 연봉(만원)</dt>
+                                                <dd>3,000 (만원)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>희망 근무지</dt>
+                                                <dd>서울본사(1순위), 부산지사(2순위)</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //지원정보 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="1">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-02.png" alt="인적정보 아이콘" class="ico">인적정보</h5>
+                                    </div> <!-- //인적정보 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <dl class="flex-box resume-data">
+                                                <dt>연락처</dt>
+                                                <dd>010-1234-5678</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>긴급연락처</dt>
+                                                <dd>010-1234-5678</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>생년월일</dt>
+                                                <dd>1990.12.15</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>성별</dt>
+                                                <dd>여</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>주소</dt>
+                                                <dd>(07981) 서울특별시 양천구 목동서로 70 221동 805호</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>국적</dt>
+                                                <dd>대한민국</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>보훈여부</dt>
+                                                <dd>보훈번호 345678 (아버지)</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <dl class="flex-box resume-data">
+                                                <dt>병력사항</dt>
+                                                <dd>면제 (제출미달)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>장애여부</dt>
+                                                <dd>2급(시력)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>색약여부</dt>
+                                                <dd>해당사항 없음</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>흡연여부</dt>
+                                                <dd>흡연여부</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>개인블로그</dt>
+                                                <dd>www.facebook.com/yunjun.16</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>취미</dt>
+                                                <dd>영화감상 / 책읽기 / 여행</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>특기</dt>
+                                                <dd>발레 / 수영 / 태권도 / 암산</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //인적정보 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="2">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-03.png" alt="학력정보 아이콘" class="ico">학력정보</h5>
+                                    </div> <!-- //학력정보 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <strong class="resume-data-tit">대학원(Post-Doc)</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교명</dt>
+                                                <dd>서울시립대학교</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교소재지</dt>
+                                                <dd>경기도</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>전공</dt>
+                                                <dd>어문학전공 / 국민학과</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>LAB명</dt>
+                                                <dd>내일대학 국어연구</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>지도교수</dt>
+                                                <dd>홍길동</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>연구분야</dt>
+                                                <dd>한글과 외국어의 발음기호 차이</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>재학기간</dt>
+                                                <dd>2019.12(입학)~2020.3(재학중)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>주야간</dt>
+                                                <dd>주간</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>논문 & 졸업작품</dt>
+                                                <dd>한글과 외국어의 발음기호 차이</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>논문증명서</dt>
+                                                <dd>한글논문.pdf</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">대학(학사)</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교명</dt>
+                                                <dd>서울시립대학교</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교소재지</dt>
+                                                <dd>경기도</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>전공</dt>
+                                                <dd>어문학전공 / 국민학과</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>LAB명</dt>
+                                                <dd>내일대학 국어연구</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>지도교수</dt>
+                                                <dd>홍길동</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>연구분야</dt>
+                                                <dd>한글과 외국어의 발음기호 차이</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>재학기간</dt>
+                                                <dd>2019.12(입학)~2020.3(재학중)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>주야간</dt>
+                                                <dd>주간</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>논문 & 졸업작품</dt>
+                                                <dd>한글과 외국어의 발음기호 차이</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>논문증명서</dt>
+                                                <dd>한글논문.pdf</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">고등학교</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>대입검정고시</dt>
+                                                <dd>-</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교명</dt>
+                                                <dd>학산여자고등학교</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>학교소재지</dt>
+                                                <dd>경기도</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>전공계열</dt>
+                                                <dd>예체능계 / 미술</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>재학기간</dt>
+                                                <dd>2019.12(입학)~2020.3(졸업)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>주야간</dt>
+                                                <dd>주간</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>내신등급</dt>
+                                                <dd>5등급</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>성적증명서</dt>
+                                                <dd>증명서.pdf</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //학력정보 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="3">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-04.png" alt="경력사항 아이콘" class="ico">경력사항</h5>
+                                    </div> <!-- //경력사항 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <strong class="resume-data-tit">경력사항(취업/인턴포함)</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>회사명</dt>
+                                                <dd>대학내일</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>근무기간</dt>
+                                                <dd>2019.12~2020.3</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>담당업무</dt>
+                                                <dd>기획</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>급여(만원)</dt>
+                                                <dd>500(만원)</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>퇴직사유</dt>
+                                                <dd>대학교 복학</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">경력사항(아르바이트)</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>회사명</dt>
+                                                <dd>대학내일</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>근무기간</dt>
+                                                <dd>2019.12~2020.3</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>담당업무</dt>
+                                                <dd>기획</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>급여(만원)</dt>
+                                                <dd>500(만원)</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">학내외활동 (동아리 포함)</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>활동단체</dt>
+                                                <dd>영어동아리</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>활동기간</dt>
+                                                <dd>2019.12~2020.3</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>활동내용</dt>
+                                                <dd>동아리 운영과 동아리장을 3년간 역임했습니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">봉사활동</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>봉사시간(h)</dt>
+                                                <dd>20h</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>활동기간</dt>
+                                                <dd>2019.12~2020.3</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>증명서발급처</dt>
+                                                <dd>한국어린이재단</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>증명서발급번호</dt>
+                                                <dd>SM22323423e</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">교육이수</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>교육기관명</dt>
+                                                <dd>한국해비타트</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>교육기간</dt>
+                                                <dd>2019.12~2020.3</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>교육과정</dt>
+                                                <dd>방송 영상 촬영 및 편집</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //경력사항 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="4">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-05.png" alt="수상/자격증/어학 아이콘" class="ico">수상/자격증/어학</h5>
+                                    </div> <!-- //수상,자격증,어학 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <strong class="resume-data-tit">자격증/면허증</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>자격증명</dt>
+                                                <dd>정보처리기사 1급</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>발행처/기관</dt>
+                                                <dd>한국정보처리원</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>취득일</dt>
+                                                <dd>2019.12.15</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>등록번호</dt>
+                                                <dd>SM22323423e</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">공인외국어시험</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>언어</dt>
+                                                <dd>영어</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>시험종류</dt>
+                                                <dd>TOEIC</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>점수 / 등급</dt>
+                                                <dd>920</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>취득일</dt>
+                                                <dd>2019.12.15</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>등록번호</dt>
+                                                <dd>SM22323423e</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">외국어 활용 능력</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>언어</dt>
+                                                <dd>영어</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>회화</dt>
+                                                <dd>중</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>작문</dt>
+                                                <dd>상</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>독해</dt>
+                                                <dd>상</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">수상내역/공모전</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>공모전</dt>
+                                                <dd>공모전 이름</dd>
+                                            </dl>
+                                            <dl class="flex-box resume-data">
+                                                <dt>수상내역</dt>
+                                                <dd>금상</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //수상,자격증,어학 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="5">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-06.png" alt="자기소개서 아이콘" class="ico">자기소개서</h5>
+                                    </div> <!-- //자기소개서 제목 -->
+                                    <div class="resume-txt-box">
+                                        <div class="el">
+                                            <strong class="txt-indent tit"><span class="efw500 mark">Q</span>본인이 생각하는 IT업무란?</strong>
+                                            <p class="txt">캐주얼 의류 매장에서 아르바이트를 했습니다. 인근에 공업단지가 있었고, 공업단지 내에는 1만명의 외국인 노동자가 근무를 했습니다. 이 때문에 외국인 노동자 고객이 평일 3~4명, 주말 10명 이상 방문했습니다. 하지만 해당 고객이 제품에 대해 질문을 하려고 해도 제대로 응대하는 직원이 없어서 구경만 하고 나가거나 불만을 토로하는 고객들이 생각보다 많았습니다. 해당 고객을 위해 첫째, 고객이 편하게 느끼는 영어와 몸짓, 손짓을 사용해 고객과 대화했습니다. 또한, 영어를 못하시는 점주께 제가 정리한 영어 문장 매뉴얼을 드려 제 타임이 아닐 때도 외국인 고객을 응대하도록 했습니다. 이는 기존보다 자연스럽게 얘기를 이어갈 수 있었고, 고객 또한 다른 매장과는 다르다며 흥미롭게 봐주셨습니다.</p>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="txt-indent tit"><span class="efw500 mark">Q</span>여러분이 생각한 직무에 대한 지원동기는 무엇입니까?</strong>
+                                            <p class="txt">건강, 맛, 저렴한 가격 등 다양한 이유로 식자재 구매가 이어지고 있는 업계에서 농,수,축산물을 넘어 가공식품의 니즈가 지속해서 증가하고 있습니다. CJ프레시웨이는 송림푸드 인수로 소스 생산에 투자하면서 소스류와 뗄 수 없는 3조 원 HMR 시장 공략에 힘쓰고 있습니다. 기존 C&D 형태를 넘어 할인매장, 식자재 마트 등 C&C 형태까지 소스 유통망을 넓히는 데 제 열정과 경험을 1인, 맞벌이 가구가 많은 수도권에서 펼치고 싶습니다.</p>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="txt-indent tit"><span class="efw500 mark">Q</span>본인 성격의 장단점 및 가치관을 성장과정에 기반하여 작성해 주세요.</strong>
+                                            <p class="txt">주어진 상황에서 끊임없이 고민하는 장점이 있습니다. 대학 입학 2달 전에 OO OOOO 내 캐주얼 의류 매장에서 판매직을 했습니다. 인근에는 공업단지가 조성되어 있었기 때문에 외국인 노동자가 평일 3~4명, 주말 10명 이상씩 방문했습니다. 하지만 제품에 대해 질문을 하려 해도 제대로 응대하는 직원이 없어서 구경만 하거나 불만을 토로하는 고객들이 생각보다 많았습니다. 해당 고객을 위해 첫째, 고객이 편하게 느끼는 영어와 몸짓, 손짓을 사용했습니다. 또한, 영어를 못하시는 점주께 제가 정리한 영어 문장 매뉴얼을 드렸습니다.</p>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="txt-indent tit"><span class="efw500 mark">Q</span>본인의 삶 속에서 가장 중요하다고 생각하는 가치 세 가지를 기술하세요.</strong>
+                                            <p class="txt">첫째로, 긍정적인 마인드입니다. 왜냐하면 긍정적인 마인드는 스트레스를 관리하고, 힘든 일이 생길 때 이를 이겨낼 수 있는 힘이 되기 때문입니다. 유년시절부터 모나지 않은 둥글둥글한 성격 덕분에 학급에 있는 대부분의 친구들과 쉽게 어울리며 좋은 교우관계를 형성해 왔습니다. 또한 홍콩에서의 교환학생 생활과 다양한 해외 여행을 통해 다양한 사람들을 만나며 세상의 다양한 삶을 배웠습니다. 이러한 과정에서 사람과 삶을 긍정적으로 바라볼 수 있는 시각을 가지게 되었습니다.</p>
+                                        </div>
+                                    </div> <!-- //자기소개서 내용 -->
+                                    <div class="cardtit-box anchortit-box" data-tit="6">
+                                        <h5 class="cardtit"><img src="../../../content/images/sub/receptStatus/apply-resume-ico-07.png" alt="추가자료 아이콘" class="ico">추가자료</h5>
+                                    </div> <!-- //추가자료 제목 -->
+                                    <div class="flex-box flex-wrap resume-info-box">
+                                        <div class="el">
+                                            <strong class="resume-data-tit">포트폴리오</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>파일</dt>
+                                                <dd>2020 포폴_홍길동.zip</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="el">
+                                            <strong class="resume-data-tit">자기 소개 영상</strong>
+                                            <dl class="flex-box resume-data">
+                                                <dt>링크</dt>
+                                                <dd>https://www.youtube.com/watch?v=TUlyDx5hTZw</dd>
+                                            </dl>
+                                        </div>
+                                    </div> <!-- //추가자료 내용 -->
+                                    <div class="flex-box flex-spc-btw card-btn-box">
+                                        <div class="lt">
+                                            <a href="공고별접수현황상세.html" title="공고별접수현황상세 페이지로 이동" class="fc-grey btn sm sm-h linebtn">목록</a>
+                                        </div>
+                                        <div class="rt">
+                                            <a href="javascript:void(0);" title="임시저장 변경하기" class="black btn md sm-h solidbtn">임시저장 변경</a>
+                                        </div>
+                                    </div>
+                                </div> <!-- //하단 지원자 상세정보 -->
+                            </div> <!-- //card -->
+                        </div> <!-- //card wrap : 지원자 지원서 -->
+                        <span class="btn scltop-btn"><span class="efw500 label">TOP</span></span>
+                    </div> <!-- //grid -->
+                </div>
+                <!-- footer START -->
+                <footer>
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw ft-wrap">
+                            <div class="lt">
+                                <span class="copyright">COPYRIGHT©NHR COMMUNICATIONS. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="rt">
+                                <span class="ft-info">help-n@nhrcomm.com</span><span class="ft-info">02-735-1141</span>
+                            </div>
+                        </div>
+                    </div> <!-- //grid -->
+                </footer>
+                <!-- //footer END -->
+            </section>
+            <!-- //right page area END -->
+        </div>
+        <!-- //wrapper END -->
+        <script>
+            $(document).ready(function(){
+
+                //스크롤 탑 이벤트
+                var sclTopBtn = $('.scltop-btn');
+                sclTopBtn.on('click', function(){
+                    $('html, body').stop().animate({
+                        scrollTop: 0
+                    }, 350)
+                });
+
+                //탭 메뉴 이벤트
+                var resume = $('.resume-wrap');
+                var anchorTabBox = $('.anchor-tab-box');
+                var anchorTabLi = $('.anchor-tab-box').find('li');
+
+                //탭 메뉴 스크롤 이벤트
+                $(window).scroll(function(){
+                    var windowST = $(this).scrollTop();
+                    var resumeST = resume.offset().top;
+
+                    if(windowST > resumeST - 60) {
+                        anchorTabBox.addClass('on');
+                        sclTopBtn.addClass('on'); //스크롤 탑 버튼
+                    } else {
+                        sclTopBtn.removeClass('on'); //스크롤 탑 버튼
+                        anchorTabBox.removeClass('on');
+                    }
+
+                    $('.anchortit-box').each(function(){
+                        var anchorTitIdx = $(this).attr('data-tit');
+                        var thisTitST = $(this).offset().top;
+
+                        if(windowST > thisTitST - 70) {
+                            $('.comn-tab').removeClass('on');
+                            $('.anchor-tab-box').find('li').eq( anchorTitIdx).find('.comn-tab').addClass('on');
+                        }
+                        if (windowST + $(window).height() == $(document).height()) {
+                            $('.comn-tab').removeClass('on');
+                            $('.anchor-tab-box').find('li').last().find('.comn-tab').addClass('on');
+                        }
+                    });
+                });
+
+                //탭 메뉴 클릭 이벤트
+                anchorTabLi.on('click', function(){
+                    anchorTabBox.addClass('on');
+
+                    var anchorLiIdx = $(this).index();
+                    var anchorTitIdx = $('.anchortit-box').eq(anchorLiIdx);
+                    var anchorTitSt = anchorTitIdx.offset().top;
+
+                    $('html, body').stop().animate({
+                        scrollTop: anchorTitSt - 60
+                    }, 350);
+                });
+
+            });
+        </script>
+    </body>
+</html>

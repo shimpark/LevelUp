@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*============================================================
+header
+============================================================*/
+h1,
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sub-nav-wrap {
+    padding-left: 9.25rem;
+}
+.navmenu.on,
+.sub-navmenu:hover,
+.sub-navmenu.on {
+    color: #018bd2;
+}
+
+/*============================================================
+footer
+============================================================*/
+.ft-snsmenu {
+    background-color: transparent;
+}
+
+/*============================================================
+information bar
+============================================================*/
+.infobar-area {
+    color: #fff;
+    background-color: #434343;
+}
+.infobar-btn {
+    background-color: #5e5e5f;
+}
+
+/*============================================================
+main visual slide
+============================================================*/
+.main-swiper-tit mark {
+    color: #018bd2;
+}
+.main-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #018bd2;
+}
+
+/*============================================================
+main rectangle menu
+============================================================*/
+/* main B type rectangle menu
+============================================================*/
+.main-rectmenu {
+    padding: 1.5rem 0 2rem;
+    width: 21.66%;
+    text-align: center;
+}
+.main-rectmenu:nth-child(odd) {
+    background-color: #fafafa;
+}
+.main-rectmenu:last-child {
+    padding: 2.5rem 2rem 2rem;
+    width: 35.02%;
+    text-align: left;
+}
+.main-rectmenu-label {
+    padding-bottom: 2rem;
+}
+@media screen and (max-width: 768.98px) {
+    .main-rectmenu-area .grid {
+        padding: 0;
+    }
+    .main-rectmenu {
+        width: 22.25%;
+    }
+    .main-rectmenu:last-child {
+        width: 33.25%;
+    }
+}
+@media screen and (max-width: 576.98px) {
+    .main-rectmenu:nth-child(-n+3) {
+        width: 33.33%;
+    }
+    .main-rectmenu:last-child {
+        padding: 1.5rem 20px;
+        width: 100%;
+    }
+    .main-rectmenu-label {
+        padding-bottom: 1.5rem;
+    }
+}

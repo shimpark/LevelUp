@@ -1,0 +1,488 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header START -->
+        <header>
+            <div class="grid">
+                <div class="flex-box flex-spc-btw hd-wrap">
+                    <div class="lt"><img src="../../../content/images/common/header-ci.png" alt="기업 로고" class="hd-ci"></div> <!-- //기업 로고 -->
+                    <div class="rt">
+                        <div class="hd-user">
+                            <span class="photo"></span>
+                            <span class="name">홍길동님(슈퍼관리자)</span>
+                        </div>
+                        <div class="hd-btn">
+                            <a href="javascript:void(0);" title="비밀번호 변경" class="btn pw">비밀번호 변경</a>
+                            <a href="javascript:void(0);" title="로그아웃" class="btn"><img src="../../../content/images/common/header-logout.png" alt="로그아웃 아이콘" class="logout-ico"></a>
+                        </div>
+                    </div> <!-- //관리자 정보, 비밀번호 변경, 로그아웃 -->
+                </div>
+            </div> <!-- //grid -->
+        </header>
+        <!-- //header END -->
+        <!-- wrapper START -->
+        <div id="wrapper">
+            <!-- left sidebar nav START -->
+            <aside class="left-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-01.png" alt="대시보드 메뉴 아이콘" class="ico">대시보드</span></a>
+                        </li> <!-- //대시보드 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-02.png" alt="사이트관리 메뉴 아이콘" class="ico">사이트관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="스타일 관리 페이지로 이동" class="subnav-menu"><span class="label">스타일 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="기본 관리 페이지로 이동" class="subnav-menu"><span class="label">기본 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="직무 관리 페이지로 이동" class="subnav-menu"><span class="label">직무 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="팝업 관리 페이지로 이동" class="subnav-menu"><span class="label">팝업 관리</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //사이트관리 -->
+                        <li>
+                            <div class="blue nav-menu on"><span class="label"><img src="../../../content/images/common/nav-ico-03.png" alt="채용 공고 메뉴 아이콘" class="ico">채용 공고</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원폼 등록 페이지로 이동" class="subnav-menu"><span class="label">지원폼 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 등록 페이지로 이동" class="subnav-menu"><span class="label">공고 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 리스트 페이지로 이동" class="subnav-menu"><span class="label">공고 리스트</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //채용 공고 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-04.png" alt="서류접수현황 메뉴 아이콘" class="ico">서류접수현황</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공고별 접수현황 페이지로 이동" class="subnav-menu"><span class="label">공고별 접수현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //서류접수현황 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-05.png" alt="전형-서류심사 메뉴 아이콘" class="ico">전형-서류심사</span></div>
+                            <ul class="subnav-list" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류심사 현황 페이지로 이동" class="subnav-menu on"><span class="label">서류심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류합격자 페이지로 이동" class="subnav-menu"><span class="label">서류합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-서류심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-06.png" alt="전형-인적성검사 메뉴 아이콘" class="ico">전형-인적성검사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성등록 페이지로 이동" class="subnav-menu"><span class="label">인적성등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성 합격자 페이지로 이동" class="subnav-menu"><span class="label">인적성 합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-인적성검사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-07.png" alt="전형-면접심사 메뉴 아이콘" class="ico">전형-면접심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접심사 현황 페이지로 이동" class="subnav-menu"><span class="label">면접심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접합격자 페이지로 이동" class="subnav-menu"><span class="label">면접합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-면접심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-08.png" alt="전형-추가자료제출 메뉴 아이콘" class="ico">전형-추가자료제출</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료세팅 페이지로 이동" class="subnav-menu"><span class="label">추가자료세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료 등록현황 페이지로 이동" class="subnav-menu"><span class="label">추가자료 등록현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-추가자료제출 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-09.png" alt="전형-최종합격 메뉴 아이콘" class="ico">전형-최종합격</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자세팅 페이지로 이동" class="subnav-menu"><span class="label">최종합격자세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자 페이지로 이동" class="subnav-menu"><span class="label">최종합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="입사취소자 페이지로 이동" class="subnav-menu"><span class="label">입사취소자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-최종합격 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-10.png" alt="게시판관리 메뉴 아이콘" class="ico">게시판관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(사용자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(사용자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(심사자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(심사자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="FAQ 페이지로 이동" class="subnav-menu"><span class="label">FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="1:1문의 페이지로 이동" class="subnav-menu"><span class="label">1:1문의</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용서류반환 페이지로 이동" class="subnav-menu"><span class="label">채용서류반환</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="선배 인터뷰 페이지로 이동" class="subnav-menu"><span class="label">선배 인터뷰</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //게시판관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-11.png" alt="회원관리 메뉴 아이콘" class="ico">회원관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="관리자 관리 페이지로 이동" class="subnav-menu"><span class="label">관리자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="심사자 관리 페이지로 이동" class="subnav-menu"><span class="label">심사자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="전체지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">전체지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="상시지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">상시지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용부적격자 관리 페이지로 이동" class="subnav-menu"><span class="label">채용부적격자</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //회원관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-12.png" alt="기초자료관리 메뉴 아이콘" class="ico">기초자료관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="학교목록 페이지로 이동" class="subnav-menu"><span class="label">학교목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="학과목록 페이지로 이동" class="subnav-menu"><span class="label">학과목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="자격증목록 페이지로 이동" class="subnav-menu"><span class="label">자격증목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="어학/언어목록 페이지로 이동" class="subnav-menu"><span class="label">어학/언어목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="검열단어목록 페이지로 이동" class="subnav-menu"><span class="label">검열단어목록</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //기초자료관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-13.png" alt="통계 메뉴 아이콘" class="ico">통계</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원통계 페이지로 이동" class="subnav-menu"><span class="label">지원통계</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="사이트통계 페이지로 이동" class="subnav-menu"><span class="label">사이트통계</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //통계 -->
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //left sidebar nav END -->
+            <!-- right page area START -->
+            <section class="page-area">
+                <div class="page-wrap">
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw flex-align-cnt pagetit-box">
+                            <h4 class="pagetit">
+                                <span class="label">
+                                    <span class="ico"><img src="../../../content/images/sub/typeDoc/pagetit-ico.png" alt="서류심사 현황"></span>서류심사 현황
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="mt0 card-wrap">
+                            <div class="card">
+                                <div class="flex-box flex-spc-btw tbl-sort-box">
+                                    <div class="el">
+                                        <select class="form-select">
+                                            <option>상태</option>
+                                        </select>
+                                        <select class="form-select">
+                                            <option>채용 분류</option>
+                                            <option>전체</option>
+                                            <option>신입</option>
+                                            <option>경력</option>
+                                            <option>기타</option>
+                                            <option>무관</option>
+                                            <option>인턴</option>
+                                        </select>
+                                        <select class="form-select">
+                                            <option>공고명</option>
+                                            <option>작성자</option>
+                                        </select>
+                                    </div>
+                                    <div class="el">
+                                        <span class="form-search">
+                                            <input type="text" class="form-input">
+                                            <button class="btn"></button>
+                                        </span>
+                                    </div>
+                                </div> <!-- //테이블 소팅 박스 -->
+                                <div class="mt30 tbl-wrap">
+                                    <table class="list-tbl">
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col class="w-tit sm">
+                                            <col class="w2">
+                                            <col class="w3">
+                                            <col class="w3">
+                                            <col class="w3">
+                                            <col class="w2"> 
+                                            <col class="w2">
+                                            <col class="w2">
+                                        </colgroup>
+                                        <tr>
+                                            <th>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </th>
+                                            <th>No</th>
+                                            <th>공고명</th>
+                                            <th>채용분류</th>
+                                            <th>서류접수시작일</th>
+                                            <th>서류심사마감일</th>
+                                            <th>합격발표일</th>
+                                            <th>상태</th>
+                                            <th>심사완료</th>
+                                            <th>심사대기</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">1</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>신입</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>대기중</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">2</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>경력</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>심사중</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">3</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>경력</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>심사중</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">4</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>신입</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>대기중</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">5</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>신입</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>심사완료</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">6</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>신입</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>심사완료</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="form-check"><input type="checkbox"><span class="label"></span></label>
+                                            </td>
+                                            <td class="fc-grey lighten1 efw500">7</td>
+                                            <td class="txt-lt">
+                                                <a href="서류심사현황상세.html" title="서류심사 현황 상세 페이지로 이동" class="txt-elp tit">2020년 상반기 현대백화점그룹 대졸 신입사원 채용(홈쇼핑, 면세점)</a>
+                                            </td>
+                                            <td>경력</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td class="fc-grey lighten1 efw500">20.07.20 10:00</td>
+                                            <td>심사중</td>
+                                            <td>000명</td>
+                                            <td>000명</td>
+                                        </tr>
+                                    </table>
+                                    <div class="pagination">
+                                        <a href="javascript:void(0);" class="btn arw prev first"></a>
+                                        <a href="javascript:void(0);" class="btn arw prev"></a>
+                                        <a href="javascript:void(0);" class="efw500 btn idx on">1</a>
+                                        <a href="javascript:void(0);" class="efw500 btn idx">2</a>
+                                        <a href="javascript:void(0);" class="efw500 btn idx">3</a>
+                                        <a href="javascript:void(0);" class="efw500 btn idx">4</a>
+                                        <a href="javascript:void(0);" class="efw500 btn idx">5</a>
+                                        <a href="javascript:void(0);" class="btn arw next"></a>
+                                        <a href="javascript:void(0);" class="btn arw next last"></a>
+                                    </div>
+                                </div> <!-- //리스트 테이블 -->
+                                <div class="flex-box flex-spc-btw card-btn-box noline">
+                                    <div class="lt">
+                                        <span class="fc-grey btn sm sm-h linebtn">삭제</span>
+                                    </div>
+                                    <div class="rt">
+                                        <a href="javascript:void(0);" title="엑셀다운로드하기" class="green btn sm sm-h solidbtn">엑셀다운로드</a>
+                                    </div>
+                                </div>
+                            </div> <!-- //서류심사 현황 리스트 -->
+                        </div> <!-- //card wrap : 서류심사 현황 -->
+                    </div> <!-- //grid -->
+                </div>
+                <!-- footer START -->
+                <footer>
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw ft-wrap">
+                            <div class="lt">
+                                <span class="copyright">COPYRIGHT©NHR COMMUNICATIONS. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="rt">
+                                <span class="ft-info">help-n@nhrcomm.com</span><span class="ft-info">02-735-1141</span>
+                            </div>
+                        </div>
+                    </div> <!-- //grid -->
+                </footer>
+                <!-- //footer END -->
+            </section>
+            <!-- //right page area END -->
+        </div>
+        <!-- //wrapper END -->
+    </body>
+</html>

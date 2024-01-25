@@ -1,0 +1,847 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header START -->
+        <header>
+            <div class="grid">
+                <div class="flex-box flex-spc-btw hd-wrap">
+                    <div class="lt"><img src="../../../content/images/common/header-ci.png" alt="기업 로고" class="hd-ci"></div> <!-- //기업 로고 -->
+                    <div class="rt">
+                        <div class="hd-user">
+                            <span class="photo"></span>
+                            <span class="name">홍길동님(슈퍼관리자)</span>
+                        </div>
+                        <div class="hd-btn">
+                            <a href="javascript:void(0);" title="비밀번호 변경" class="btn pw">비밀번호 변경</a>
+                            <a href="javascript:void(0);" title="로그아웃" class="btn"><img src="../../../content/images/common/header-logout.png" alt="로그아웃 아이콘" class="logout-ico"></a>
+                        </div>
+                    </div> <!-- //관리자 정보, 비밀번호 변경, 로그아웃 -->
+                </div>
+            </div> <!-- //grid -->
+        </header>
+        <!-- //header END -->
+        <!-- wrapper START -->
+        <div id="wrapper">
+            <!-- left sidebar nav START -->
+            <aside class="left-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-01.png" alt="대시보드 메뉴 아이콘" class="ico">대시보드</span></a>
+                        </li> <!-- //대시보드 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-02.png" alt="사이트관리 메뉴 아이콘" class="ico">사이트관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="스타일 관리 페이지로 이동" class="subnav-menu"><span class="label">스타일 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="기본 관리 페이지로 이동" class="subnav-menu"><span class="label">기본 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="직무 관리 페이지로 이동" class="subnav-menu"><span class="label">직무 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="팝업 관리 페이지로 이동" class="subnav-menu"><span class="label">팝업 관리</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //사이트관리 -->
+                        <li>
+                            <div class="blue nav-menu on"><span class="label"><img src="../../../content/images/common/nav-ico-03.png" alt="채용 공고 메뉴 아이콘" class="ico">채용 공고</span></div>
+                            <ul class="subnav-list" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원폼 등록 페이지로 이동" class="subnav-menu on"><span class="label">지원폼 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 등록 페이지로 이동" class="subnav-menu"><span class="label">공고 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 리스트 페이지로 이동" class="subnav-menu"><span class="label">공고 리스트</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //채용 공고 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-04.png" alt="서류접수현황 메뉴 아이콘" class="ico">서류접수현황</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공고별 접수현황 페이지로 이동" class="subnav-menu"><span class="label">공고별 접수현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //서류접수현황 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-05.png" alt="전형-서류심사 메뉴 아이콘" class="ico">전형-서류심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류심사 현황 페이지로 이동" class="subnav-menu"><span class="label">서류심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류합격자 페이지로 이동" class="subnav-menu"><span class="label">서류합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-서류심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-06.png" alt="전형-인적성검사 메뉴 아이콘" class="ico">전형-인적성검사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성등록 페이지로 이동" class="subnav-menu"><span class="label">인적성등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성 합격자 페이지로 이동" class="subnav-menu"><span class="label">인적성 합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-인적성검사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-07.png" alt="전형-면접심사 메뉴 아이콘" class="ico">전형-면접심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접심사 현황 페이지로 이동" class="subnav-menu"><span class="label">면접심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접합격자 페이지로 이동" class="subnav-menu"><span class="label">면접합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-면접심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-08.png" alt="전형-추가자료제출 메뉴 아이콘" class="ico">전형-추가자료제출</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료세팅 페이지로 이동" class="subnav-menu"><span class="label">추가자료세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료 등록현황 페이지로 이동" class="subnav-menu"><span class="label">추가자료 등록현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-추가자료제출 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-09.png" alt="전형-최종합격 메뉴 아이콘" class="ico">전형-최종합격</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자세팅 페이지로 이동" class="subnav-menu"><span class="label">최종합격자세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자 페이지로 이동" class="subnav-menu"><span class="label">최종합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="입사취소자 페이지로 이동" class="subnav-menu"><span class="label">입사취소자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-최종합격 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-10.png" alt="게시판관리 메뉴 아이콘" class="ico">게시판관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(사용자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(사용자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(심사자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(심사자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="FAQ 페이지로 이동" class="subnav-menu"><span class="label">FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="1:1문의 페이지로 이동" class="subnav-menu"><span class="label">1:1문의</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용서류반환 페이지로 이동" class="subnav-menu"><span class="label">채용서류반환</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="선배 인터뷰 페이지로 이동" class="subnav-menu"><span class="label">선배 인터뷰</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //게시판관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-11.png" alt="회원관리 메뉴 아이콘" class="ico">회원관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="관리자 관리 페이지로 이동" class="subnav-menu"><span class="label">관리자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="심사자 관리 페이지로 이동" class="subnav-menu"><span class="label">심사자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="전체지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">전체지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="상시지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">상시지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용부적격자 관리 페이지로 이동" class="subnav-menu"><span class="label">채용부적격자</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //회원관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-12.png" alt="기초자료관리 메뉴 아이콘" class="ico">기초자료관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="학교목록 페이지로 이동" class="subnav-menu"><span class="label">학교목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="학과목록 페이지로 이동" class="subnav-menu"><span class="label">학과목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="자격증목록 페이지로 이동" class="subnav-menu"><span class="label">자격증목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="어학/언어목록 페이지로 이동" class="subnav-menu"><span class="label">어학/언어목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="검열단어목록 페이지로 이동" class="subnav-menu"><span class="label">검열단어목록</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //기초자료관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-13.png" alt="통계 메뉴 아이콘" class="ico">통계</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원통계 페이지로 이동" class="subnav-menu"><span class="label">지원통계</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="사이트통계 페이지로 이동" class="subnav-menu"><span class="label">사이트통계</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //통계 -->
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //left sidebar nav END -->
+            <!-- right page area START -->
+            <section class="page-area">
+                <div class="page-wrap">
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw flex-align-cnt pagetit-box">
+                            <h4 class="pagetit">
+                                <span class="label">
+                                    <span class="ico"><img src="../../../content/images/sub/recruitNotice/pagetit-ico.png" alt="지원폼 등록 아이콘"></span>지원폼 등록
+                                </span>
+                            </h4>
+                            <div class="btn lastform show-modal"><span class="label">이전 지원폼 불러오기</span></div>
+                        </div>
+                        <div class="mt0 card-wrap">
+                            <div class="card">
+                                <input type="text" placeholder="지원폼명을 입력해주세요." class="formtit-field">
+                            </div> <!-- //지원폼 제목 입력폼 -->
+                            <div class="card">
+                                <ul class="flex-box comn-tab-box anchor-tab-box col7">
+                                    <li><span class="comn-tab on">지원정보</span></li>
+                                    <li><span class="comn-tab">인적정보</span></li>
+                                    <li><span class="comn-tab">학력정보</span></li>
+                                    <li><span class="comn-tab">경력사항</span></li>
+                                    <li><span class="comn-tab">수상/자격증/어학</span></li>
+                                    <li><span class="comn-tab">자기소개</span></li>
+                                    <li><span class="comn-tab">추가자료</span></li>
+                                </ul> <!-- //탭 메뉴 박스 -->
+                                <fieldset>
+                                    <div class="cardtit-box anchortit-box" data-tit="0">
+                                        <h5 class="cardtit">지원정보</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">채용 분류</div></li>
+                                                <li><div class="sort-el">지원 분야</div></li>
+                                                <li><div class="sort-el">지원 경로</div></li>
+                                                <li><div class="sort-el">희망 연봉(만원)</div></li>
+                                                <li><div class="sort-el">직전 연봉(만원)</div></li>
+                                                <li><div class="sort-el">희망근무지</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el">지원 경로</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">선택</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">희망근무지</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" disabled><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-select">
+                                                        <select>
+                                                            <option>순위까지 </option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //지원정보 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="1">
+                                        <h5 class="cardtit">인적정보</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">연락처</div></li>
+                                                <li><div class="sort-el">긴급연락처</div></li>
+                                                <li><div class="sort-el">생년월일</div></li>
+                                                <li><div class="sort-el">성별</div></li>
+                                                <li><div class="sort-el">사진</div></li>
+                                                <li><div class="sort-el">주소</div></li>
+                                                <li><div class="sort-el">국적</div></li>
+                                                <li><div class="sort-el">보훈여부</div></li>
+                                                <li><div class="sort-el">병역사항</div></li>
+                                                <li><div class="sort-el">장애여부</div></li>
+                                                <li><div class="sort-el">색약여부</div></li>
+                                                <li><div class="sort-el">흡연여부</div></li>
+                                                <li><div class="sort-el">개인블로그/SNS</div></li>
+                                                <li><div class="sort-el">취미</div></li>
+                                                <li><div class="sort-el">특기</div></li>
+                                                <li><div class="sort-el">추가항목(장문 txt폼)</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el">연락처</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" disabled><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">미인증</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">인증</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">긴급연락처</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">선택</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">개인블로그/SNS</div>
+                                                    <div class="sort-form sort-select">
+                                                        <select>
+                                                            <option>최대개수</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el more"><span class="label">추가항목</span><input type="text" placeholder="제목 입력"></div>
+                                                    <div class="sort-form sort-input">
+                                                        <input type="number" placeholder="최대 글자수">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //인적정보 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="2">
+                                        <h5 class="cardtit">학력정보</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">학력(대학원이상)</div></li>
+                                                <li><div class="sort-el">학력(대학)</div></li>
+                                                <li><div class="sort-el">학력(고등)</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el">학력(대학원이상)</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">논문첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">미첨부</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">학력(대학)</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">논문첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">미첨부</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">성적증명서</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">미첨부</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">학력(고등)</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id="" checked><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id=""><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">성적증명서</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">미첨부</span></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt10 txt-indent sort-tip"><span class="mark">※</span>학력정보는 종류 상관 없이 최대 10개 등록 가능합니다.</p>
+                                    <p class="txt-indent sort-tip"><span class="mark">※</span>논문과 성적증명서 파일 양식은 pdf / 최대 3MB</p>
+                                    <!-- //학력정보 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="3">
+                                        <h5 class="cardtit">경력사항</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">경력사항(취업/인턴포함)</div></li>
+                                                <li><div class="sort-el">경력사항(아르바이트)</div></li>
+                                                <li><div class="sort-el">학내외활동(동아리 포함)</div></li>
+                                                <li><div class="sort-el">봉사활동</div></li>
+                                                <li><div class="sort-el">교육이수</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el">경력사항(취업/인턴포함)</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt10 txt-indent sort-tip"><span class="mark">※</span>경력사항은 종류 상관 없이 최대 10개 등록 가능합니다.</p>
+                                    <!-- //경력사항 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="4">
+                                        <h5 class="cardtit">수상/자격증/어학</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">자격증/면허증</div></li>
+                                                <li><div class="sort-el">공인외국어시험</div></li>
+                                                <li><div class="sort-el">외국어 활용 능력</div></li>
+                                                <li><div class="sort-el">수상내역/공모전</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt no-list">
+                                            <p>선택항목이 없습니다.<br>원하는 항목을 드래그해서 넣어주세요.</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt10 txt-indent sort-tip"><span class="mark">※</span>수상/자격증/어학은 종류 상관 없이 최대 10개 등록 가능합니다.</p>
+                                    <!-- //수상/자격증/어학 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="5">
+                                        <h5 class="cardtit">자기소개서</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">항목1</div></li>
+                                                <li><div class="sort-el">항목2</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el more"><span class="label">항목1</span><input type="text" placeholder="제목 입력"></div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-input">
+                                                        <input type="number" placeholder="최대 글자수">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el more"><span class="label">항목2</span><input type="text" placeholder="제목 입력"></div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-input">
+                                                        <input type="number" placeholder="최대 글자수">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt10 txt-indent sort-tip"><span class="mark">※</span>자기 소개는 종류 상관 없이 최대 10개 등록 가능합니다.</p>
+                                    <p class="txt-indent sort-tip"><span class="mark">※</span><small>▼</small> 버튼을 이용해 항목의 제목을 입력하세요.</p>
+                                    <!-- //자기소개서 -->
+                                    <span class="card-hr"></span>
+                                    <div class="cardtit-box anchortit-box" data-tit="6">
+                                        <h5 class="cardtit">추가자료</h5>
+                                    </div>
+                                    <div class="flex-box flex-spc-btw">
+                                        <div class="sort-box lt">
+                                            <ul class="sort-list">
+                                                <li><div class="sort-el">포트폴리오</div></li>
+                                                <li><div class="sort-el">추천서</div></li>
+                                                <li><div class="sort-el">추가자료1</div></li>
+                                                <li><div class="sort-el">추가자료2</div></li>
+                                                <li><div class="sort-el">추가자료3</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="sort-box md txt-cnt white">
+                                            <div class="btn-box">
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn top"><span class="label">전체 선택</span></span>
+                                                <span class="blue-grey btn sm xs-h lg-brd solidbtn sortbtn btm"><span class="label">전체 해지</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="sort-box rt">
+                                            <ul class="sort-list">
+                                                <li>
+                                                    <div class="sort-el">포트폴리오</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">파일첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">링크</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el">추천서</div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">파일첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">링크</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el more"><span class="label">추가자료1</span><input type="text" placeholder="제목 입력"></div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">파일첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">링크</span></label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sort-el more"><span class="label">추가자료2</span><input type="text" placeholder="제목 입력"></div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">필수</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">선택</span></label>
+                                                    </div>
+                                                    <div class="sort-form sort-radio">
+                                                        <label><input type="radio" name="" id=""><span class="label">파일첨부</span></label>
+                                                        <label><input type="radio" name="" id="" checked><span class="label">링크</span></label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="mt10 txt-indent sort-tip"><span class="mark">※</span>추가 자료는 종류 상관 없이 최대 5개 등록 가능합니다.</p>
+                                    <p class="txt-indent sort-tip"><span class="mark">※</span>파일 양식은 pdf, hwp, docx. png, jpg, zip / 최대 30MB</p>
+                                    <p class="txt-indent sort-tip"><span class="mark">※</span><small>▼</small> 버튼을 이용해 항목의 제목을 입력하세요.</p>
+                                    <!-- //추가자료 -->
+                                </fieldset> <!-- //폼 필드 -->
+                                <div class="flex-box flex-spc-btw card-btn-box">
+                                    <div class="lt">
+                                        <a href="javascript:void(0);" title="미리보기" class="fc-blue btn md md-h linebtn">미리보기</a>
+                                    </div>
+                                    <div class="rt">
+                                        <a href="javascript:void(0);" title="지원폼 등록 취소" class="grey btn md md-h solidbtn">취소</a>
+                                        <a href="지원폼등록완료.html" title="지원폼 등록하기" class="black btn md md-h solidbtn">등록</a>
+                                    </div>
+                                </div>
+                            </div> <!-- //지원폼 상세 입력폼 -->
+                        </div> <!-- //card wrap : 지원폼 등록 -->
+                    </div> <!-- //grid -->
+                </div>
+                <!-- footer START -->
+                <footer>
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw ft-wrap">
+                            <div class="lt">
+                                <span class="copyright">COPYRIGHT©NHR COMMUNICATIONS. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="rt">
+                                <span class="ft-info">help-n@nhrcomm.com</span><span class="ft-info">02-735-1141</span>
+                            </div>
+                        </div>
+                    </div> <!-- //grid -->
+                </footer>
+                <!-- //footer END -->
+            </section>
+            <!-- //right page area END -->
+        </div>
+        <!-- //wrapper END -->
+        <!-- modal START -->
+        <div class="modal-area">
+            <div class="modal-wrap">
+                <div class="modal-view-wrap">
+                    <div class="modal-view">
+                        <strong class="modal-hd-tit">이메일 수집 동의</strong>
+                        <div class="modal-cont">
+                            <table class="list-tbl modal-tbl">
+                                <colgroup>
+                                    <col class="w1">
+                                    <col>
+                                    <col class="w2">
+                                </colgroup>
+                                <tr>
+                                    <th>No</th>
+                                    <th>지원폼명</th>
+                                    <th>선택</th>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">1</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">2</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집 2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">3</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">4</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">5</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">6</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집 2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">7</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">8</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집 2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">9</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집 2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fc-grey lighten1 efw500">10</td>
+                                    <td class="txt-lt">
+                                        <span class="txt-elp tit">2019년 본사 서울본점 신입모집</span>
+                                    </td>
+                                    <td>
+                                        <a href="javascript:void(0);" title="지원폼 상세보기" class="blue-grey btn no-w xs-h solidbtn">보기</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="txt-cnt modal-btn-wrap">
+                        <span class="fc-grey btn xs xs-h linebtn close-modal">닫기</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //modal END -->
+        <script>
+            $(document).ready(function(){
+
+                //탭 메뉴 이벤트
+                var anchorCard = $('.anchor-tab-box').parents('.card');
+                var anchorTabBox = $('.anchor-tab-box');
+
+                //탭 메뉴 스크롤 이벤트
+                $(window).scroll(function(){
+                    var windowST = $(this).scrollTop();
+                    var anchorCardSt = anchorCard.offset().top;
+
+                    if(windowST > anchorCardSt - 60) {
+                        anchorTabBox.addClass('on');
+                    } else {
+                        anchorTabBox.removeClass('on');
+                    }
+
+                    $('.anchortit-box').each(function(){
+                        var anchorTitIdx = $(this).attr('data-tit');
+                        var thisTitST = $(this).offset().top;
+
+                        if(windowST > thisTitST - 100) {
+                            $('.comn-tab').removeClass('on');
+                            $('.anchor-tab-box').find('li').eq( anchorTitIdx).find('.comn-tab').addClass('on');
+                        }
+                        if (windowST + $(window).height() == $(document).height()) {
+                            $('.comn-tab').removeClass('on');
+                            $('.anchor-tab-box').find('li').last().find('.comn-tab').addClass('on');
+                        }
+                    });
+                });
+
+                //탭 메뉴 클릭 이벤트
+                var anchorTabLi = $('.anchor-tab-box').find('li');
+
+                anchorTabLi.on('click', function(){
+                    anchorTabBox.addClass('on');
+
+                    var anchorIdx = $(this).index();
+                    var anchorTitIdx = $('.anchortit-box').eq(anchorIdx);
+                    var cardTitSt = anchorTitIdx.offset().top;
+
+                    $('html, body').stop().animate({
+                        scrollTop : cardTitSt - 90
+                    }, 350);
+                });
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="custom-area">
+            <div class="custom-hd">
+                <div class="grid">
+                    <div class="flex-box flex-spc-btw">
+                        <div class="lt">
+                            <a href="javascipt:void(0);" title="개인정보처리방침" class="fc-white btn md sm-h linebtn">개인정보 처리방침</a>
+                            <a href="javascipt:void(0);" title="이용약관" class="fc-white btn sm sm-h linebtn">이용약관</a>
+                        </div>
+                        <div class="rt txt-rt">
+                            <a href="javascipt:void(0);" title="취소" class="fc-white btn sm sm-h linebtn">취소</a>
+                            <a href="javascipt:void(0);" title="임시저장" class="grey btn sm sm-h solidbtn">임시저장</a>
+                            <a href="공고등록step4.html" title="저장" class="black btn sm sm-h solidbtn">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                //커스틈 페이지 메뉴 버튼
+                var customLiBtn = $('.custom-list-btn');
+                var customLi = $('.custom-list');
+
+                customLiBtn.on('click', function(){
+                    $(this).find(customLi).slideDown(150);
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*==============================================
+
+    --------------------------------------------
+    * Date  :   2020.04.13
+    * Name  :   skin.css
+    --------------------------------------------
+
+    - css list -
+
+    01. reset.css
+    02. common.css
+    03. publish.css
+    04. styleB.css
+
+==============================================*/
+
+@import "reset.css";
+@import "common.css";
+@import "publish.css";
+@import "styleB.css";

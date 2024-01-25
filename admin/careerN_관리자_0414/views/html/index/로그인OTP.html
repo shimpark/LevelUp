@@ -1,0 +1,92 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- login area START -->
+        <div class="login-area">
+            <div class="grid">
+                <div class="login-tit-box">
+                    <h2 class="login-tit"><strong class="corp">KT</strong>채용 관리자 : OTP 등록</h2>
+                </div>
+                <div class="login-form-wrap">
+                    <div class="login-form-row">
+                        <label class="login-input id">
+                            <input type="text">
+                            <span class="label">OTP 인증번호</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="login-btn-wrap">
+                    <a href="javascript:void(0);" title="인증하기" class="blue btn lg-h solidbtn loginbtn">인증</a>
+                </div>
+            </div> <!-- //grid -->
+            <!-- footer START -->
+            <footer class="login-ft">
+                <div class="grid">
+                    <div class="flex-box flex-spc-cnt flex-align-cnt ft-wrap">
+                        <div class="lt">
+                            <span class="fw300 fc-dull-blue">OPT사용 가이드를 확인하세요.</span>
+                        </div>
+                        <div class="rt">
+                            <a href="javascript:void(0);" title="가이드 다운로드하기" class="fc-dull-blue no-w xs-h btn linebtn">가이드 다운로드</a>
+                        </div>
+                    </div>
+                </div> <!-- //grid -->
+            </footer>
+            <!-- //footer END -->
+        </div>
+        <!--// login area END -->
+        <script>
+            $(document).ready(function(){
+
+                //로그인 필드 라벨 액션
+                var inputTxt = $('.login-input').find('input');
+
+                inputTxt.focus(function(){
+                    $(this).next('.label').addClass('on');
+                });
+                inputTxt.blur(function(){
+                    if($(this).val()) {
+                        $(this).next('.label').addClass('on');
+                    } else {
+                        $(this).next('.label').removeClass('on');
+                    }
+                });
+
+            });
+        </script>
+    </body>
+</html>

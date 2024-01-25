@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*============================================================
+header
+============================================================*/
+nav li:last-child {
+    margin-left: 2rem;
+}
+.hd-mycareer {
+    color: #fff;
+    background-color: #000;
+}
+.sub-nav-wrap {
+    padding-right: 5.15rem;
+    justify-content: flex-end;
+}
+.navmenu.on,
+.sub-navmenu:hover,
+.sub-navmenu.on {
+    color: #fc352c;
+}
+
+/*============================================================
+footer
+============================================================*/
+.ft-snsmenu {
+    background-color: #333;
+}
+
+/*============================================================
+information bar
+============================================================*/
+.infobar-area {
+    border-top: 1px solid #dbdbdb;
+}
+.infobar-btn {
+    background-color: #b2b2b2;
+}
+
+/*============================================================
+main visual slide
+============================================================*/
+.main-swiper-tit mark {
+    color: #f54040;
+}
+.main-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ef7b0b;
+}
+
+/*============================================================
+main rectangle menu
+============================================================*/
+.main-rectmenu-area {
+    padding: 4rem 0;
+}
+.main-rectmenu-label {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+}
+.main-rectmenu {
+    position: relative;
+    padding-left: 7.75rem;
+    padding-right: 3.25rem;
+    width: 50%;
+}
+@media screen and (max-width: 768.98px) {
+    .main-rectmenu-label {
+        left: 1.5rem;
+    }
+    .main-rectmenu {
+        padding-left: 5.5rem;
+        padding-right: 1.5rem;
+    }
+}
+@media screen and (max-width: 576.98px) {
+    .main-rectmenu-area {
+        padding: 1.5rem 0;
+    }
+    .main-rectmenu-wrap {
+        flex-direction: column;
+        border: 0;
+    }
+    .main-rectmenu {
+        padding: 1.5rem 0 1.5rem 5.5rem;
+        width: 100%;
+    }
+    .main-rectmenu-label {
+        top: 1.5rem;
+        left: 0;
+    }
+}

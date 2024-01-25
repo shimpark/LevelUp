@@ -1,0 +1,179 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- set area START -->
+        <div class="set-area">
+            <div class="grid">
+                <div class="settit-box">
+                    <h4 class="settit">홈페이지 기본 세팅</h4>
+                </div> <!-- //set title box -->
+                <div class="mt20 card">
+                    <fieldset>
+                        <div class="form-wrap">
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 1</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">기업명을 입력하세요.</strong>
+                                    <input type="text" class="form-input">
+                                </div>
+                            </div> <!-- //기업명을 입력하세요. -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 2</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">로고를 등록하세요.</strong>
+                                    <input type="text" class="form-input">
+                                    <label class="form-file"><input type="file"><button class="grey lighten2 btn sm sm-h solidbtn">등록</button></label>
+                                    <p class="fc-dull-blue txt-indent form-tip"><span class="mark">※</span>배경이 투명한 png이미지로 등록하세요.</p>>
+                                </div>
+                            </div> <!-- //로고를 등록하세요. -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 3</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">채용 홈페이지 메인 레이아웃을 선택하세요.</strong>
+                                    <label class="form-radio">
+                                        <input type="radio" name="mainStyle" id="mainscroll" checked><span class="label">세로스크롤형</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="mainStyle" id="mainone"><span class="label" checked>원페이지형</span>
+                                    </label>
+                                    <div class="mt20 ml0 flex-box set-main-box">
+                                        <div class="main-thumb mainscroll on">
+                                            <img src="../../../content/images/sub/login/main-style-scroll.png" alt="스크롤형 페이지">
+                                            <a href="javascript:void(0);" target="_blank" title="미리보기" class="blue btn solidbtn"><span class="label">미리보기</span></a>
+                                        </div>
+                                        <div class="main-thumb mainone">
+                                            <img src="../../../content/images/sub/login/main-style-onepage.png" alt="원페이지형 페이지">
+                                            <a href="javascript:void(0);" target="_blank" title="미리보기" class="blue btn solidbtn"><span class="label">미리보기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- //채용 홈페이지 메인 레이아웃을 선택하세요. -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 4</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">지원서 작성시 로그인 형태를 선택하세요.</strong>
+                                    <label class="form-check"><input type="checkbox" checked disabled><span class="label">이메일 인증(기본)</span></label>
+                                    <label class="ml30 form-check"><input type="checkbox"><span class="label">SNS 인증</span></label>
+                                </div>
+                            </div> <!-- //지원서 작성시 로그인 형태를 선택하세요. -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 5</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">지원서 작성시 핸드폰 및 아이핀을 이용한 본인인증 기능을 사용할까요?</strong>
+                                    <label class="form-radio">
+                                        <input type="radio" name="certify" id="no" checked><span class="label">사용안함</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="certify" id="yes"><span class="label">사용</span>
+                                    </label>
+                                    <p class="txt-indent form-tip"><span class="mark">※</span>별도의 추가 비용이 필요합니다. 사이트 오픈 3주 전 선계약이 필요합니다.</p>
+                                </div>
+                            </div> <!-- //지원서 작성시 핸드폰 및 아이핀을 이용한 본인인증 기능을 사용할까요? -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 6</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">SMS 또는 카카오 알림톡을 이용해 전형안내를 진행할까요?</strong>
+                                    <label class="form-radio">
+                                        <input type="radio" name="alarm" id="no" checked><span class="label">사용안함</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="alarm" id="sms"><span class="label">SMS</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="alarm" id="kakao"><span class="label">카카오 알림톡</span>
+                                    </label>
+                                    <p class="txt-indent form-tip"><span class="mark">※</span>별도의 추가 비용이 필요합니다. 사이트 오픈 3주 전 선계약이 필요합니다.</p>
+                                </div>
+                            </div> <!-- //SMS 또는 카카오 알림톡을 이용해 전형안내를 진행할까요? -->
+                            <span class="card-hr"></span>
+                            <div class="form-row">
+                                <span class="pt0 form-label">STEP 7</span>
+                                <div class="form-field">
+                                    <strong class="field-tit">서류심사 시 검사 솔루션을 사용할까요?</strong>
+                                    <label class="form-radio">
+                                        <input type="radio" name="solution" id="no" checked><span class="label">사용안함</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="solution" id="normal"><span class="label">기본검사</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="solution" id="plagiarize"><span class="label">표절검사</span>
+                                    </label>
+                                    <label class="form-radio">
+                                        <input type="radio" name="solution" id="ai"><span class="label">AI평가</span>
+                                    </label>
+                                    <p class="txt-indent form-tip"><span class="mark">※</span>별도의 추가 비용이 필요합니다. 사이트 오픈 3주 전 선계약이 필요합니다.</p>
+                                </div>
+                            </div> <!-- //서류심사 시 검사 솔루션을 사용할까요? -->
+                            <span class="card-hr"></span>
+                            <div class="pt0 mt0 txt-cnt card-btn-box noline">
+                                <a href="javascript:void(0);" title="건너뛰기" class="fs18 grey btn lg lg-h solidbtn">건너뛰기</a>
+                                <a href="javascript:void(0);" title="등록하기" class="fs18 black btn lg lg-h solidbtn">등록</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div> <!-- //card -->
+            </div> <!-- //grid -->
+        </div>
+        <!-- //set area END -->
+        <script>
+             $(document).ready(function(){
+                 //메인 레이아웃 선택
+                 var inputRadio = $('input[type="radio"]');
+
+                 inputRadio.click(function () {
+                    var radioId = $(this).attr('id');
+                    var mainStyle = $('.' + radioId);
+
+                    $('.main-thumb').removeClass('on');
+                    mainStyle.addClass('on');
+                });
+
+                //첨부 이미지 파일명
+                $('.form-file').find('input[type="file"]').change(function(e){
+                    var fileName = e.target.files[0].name;
+                    $(this).parents().siblings('.form-input').val(fileName);
+                });
+             });
+        </script>
+    </body>
+</html>

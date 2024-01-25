@@ -1,0 +1,764 @@
+<!Doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if this page needs to reset cache]>
+        <meta http-equiv="Cache-Control" content="no-cache"> <meta http-equiv="Pragma" content="no-cache">
+        <![endif]-->
+        <title></title>
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="univJOYSEUL">
+        <meta property="og:title" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="">
+        <meta name="twitter:description" content="">
+
+        <link rel="icon" href="" type="image/png">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="../../../content/styles/style.css" rel="stylesheet">
+
+        <script src="../../../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../../../content/scripts/common.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../../../content/scripts/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- header START -->
+        <header>
+            <div class="grid">
+                <div class="flex-box flex-spc-btw hd-wrap">
+                    <div class="lt"><img src="../../../content/images/common/header-ci.png" alt="기업 로고" class="hd-ci"></div> <!-- //기업 로고 -->
+                    <div class="rt">
+                        <div class="hd-user">
+                            <span class="photo"></span>
+                            <span class="name">홍길동님(슈퍼관리자)</span>
+                        </div>
+                        <div class="hd-btn">
+                            <a href="javascript:void(0);" title="비밀번호 변경" class="btn pw">비밀번호 변경</a>
+                            <a href="javascript:void(0);" title="로그아웃" class="btn"><img src="../../../content/images/common/header-logout.png" alt="로그아웃 아이콘" class="logout-ico"></a>
+                        </div>
+                    </div> <!-- //관리자 정보, 비밀번호 변경, 로그아웃 -->
+                </div>
+            </div> <!-- //grid -->
+        </header>
+        <!-- //header END -->
+        <!-- wrapper START -->
+        <div id="wrapper">
+            <!-- left sidebar nav START -->
+            <aside class="left-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-01.png" alt="대시보드 메뉴 아이콘" class="ico">대시보드</span></a>
+                        </li> <!-- //대시보드 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-02.png" alt="사이트관리 메뉴 아이콘" class="ico">사이트관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="스타일 관리 페이지로 이동" class="subnav-menu"><span class="label">스타일 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="기본 관리 페이지로 이동" class="subnav-menu"><span class="label">기본 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="직무 관리 페이지로 이동" class="subnav-menu"><span class="label">직무 관리</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="팝업 관리 페이지로 이동" class="subnav-menu"><span class="label">팝업 관리</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //사이트관리 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-03.png" alt="채용 공고 메뉴 아이콘" class="ico">채용 공고</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원폼 등록 페이지로 이동" class="subnav-menu"><span class="label">지원폼 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 등록 페이지로 이동" class="subnav-menu"><span class="label">공고 등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공고 리스트 페이지로 이동" class="subnav-menu"><span class="label">공고 리스트</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //채용 공고 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-04.png" alt="서류접수현황 메뉴 아이콘" class="ico">서류접수현황</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공고별 접수현황 페이지로 이동" class="subnav-menu"><span class="label">공고별 접수현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //서류접수현황 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-05.png" alt="전형-서류심사 메뉴 아이콘" class="ico">전형-서류심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류심사 현황 페이지로 이동" class="subnav-menu"><span class="label">서류심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="서류합격자 페이지로 이동" class="subnav-menu"><span class="label">서류합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-서류심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-06.png" alt="전형-인적성검사 메뉴 아이콘" class="ico">전형-인적성검사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성등록 페이지로 이동" class="subnav-menu"><span class="label">인적성등록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="인적성 합격자 페이지로 이동" class="subnav-menu"><span class="label">인적성 합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-인적성검사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-07.png" alt="전형-면접심사 메뉴 아이콘" class="ico">전형-면접심사</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="심사세팅 페이지로 이동" class="subnav-menu"><span class="label">심사세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접심사 현황 페이지로 이동" class="subnav-menu"><span class="label">면접심사 현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="면접합격자 페이지로 이동" class="subnav-menu"><span class="label">면접합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-면접심사 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-08.png" alt="전형-추가자료제출 메뉴 아이콘" class="ico">전형-추가자료제출</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료세팅 페이지로 이동" class="subnav-menu"><span class="label">추가자료세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="추가자료 등록현황 페이지로 이동" class="subnav-menu"><span class="label">추가자료 등록현황</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-추가자료제출 -->
+                        <li>
+                            <div class="blue nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-09.png" alt="전형-최종합격 메뉴 아이콘" class="ico">전형-최종합격</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자세팅 페이지로 이동" class="subnav-menu"><span class="label">최종합격자세팅</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="최종합격자 페이지로 이동" class="subnav-menu"><span class="label">최종합격자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="입사취소자 페이지로 이동" class="subnav-menu"><span class="label">입사취소자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="문자/메일 발송 페이지로 이동" class="subnav-menu"><span class="label">문자/메일 발송</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //전형-최종합격 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-10.png" alt="게시판관리 메뉴 아이콘" class="ico">게시판관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(사용자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(사용자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="공지사항(심사자) 페이지로 이동" class="subnav-menu"><span class="label">공지사항(심사자)</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="FAQ 페이지로 이동" class="subnav-menu"><span class="label">FAQ</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="1:1문의 페이지로 이동" class="subnav-menu"><span class="label">1:1문의</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용서류반환 페이지로 이동" class="subnav-menu"><span class="label">채용서류반환</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="선배 인터뷰 페이지로 이동" class="subnav-menu"><span class="label">선배 인터뷰</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //게시판관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-11.png" alt="회원관리 메뉴 아이콘" class="ico">회원관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="관리자 관리 페이지로 이동" class="subnav-menu"><span class="label">관리자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="심사자 관리 페이지로 이동" class="subnav-menu"><span class="label">심사자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="전체지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">전체지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="상시지원자 관리 페이지로 이동" class="subnav-menu"><span class="label">상시지원자</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="채용부적격자 관리 페이지로 이동" class="subnav-menu"><span class="label">채용부적격자</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //회원관리 -->
+                        <li>
+                            <div class="nav-menu"><span class="label"><img src="../../../content/images/common/nav-ico-12.png" alt="기초자료관리 메뉴 아이콘" class="ico">기초자료관리</span></div>
+                            <ul class="subnav-list">
+                                <li>
+                                    <a href="javascript:void(0);" title="학교목록 페이지로 이동" class="subnav-menu"><span class="label">학교목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="학과목록 페이지로 이동" class="subnav-menu"><span class="label">학과목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="자격증목록 페이지로 이동" class="subnav-menu"><span class="label">자격증목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="어학/언어목록 페이지로 이동" class="subnav-menu"><span class="label">어학/언어목록</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="검열단어목록 페이지로 이동" class="subnav-menu"><span class="label">검열단어목록</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //기초자료관리 -->
+                        <li>
+                            <div class="nav-menu on"><span class="label"><img src="../../../content/images/common/nav-ico-13.png" alt="통계 메뉴 아이콘" class="ico">통계</span></div>
+                            <ul class="subnav-list" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);" title="지원통계 페이지로 이동" class="subnav-menu on"><span class="label">지원통계</span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="사이트통계 페이지로 이동" class="subnav-menu"><span class="label">사이트통계</span></a>
+                                </li>
+                            </ul>
+                        </li> <!-- //통계 -->
+                    </ul>
+                </nav>
+            </aside>
+            <!-- //left sidebar nav END -->
+            <!-- right page area START -->
+            <main class="page-area">
+                <div class="page-wrap">
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw flex-align-cnt pagetit-box">
+                            <h4 class="pagetit">
+                                <span class="label">
+                                    <span class="ico"><img src="../../../content/images/sub/statistics/pagetit-ico.png" alt="통계 아이콘"></span>지원 통계
+                                </span>
+                            </h4>
+                            <div class="form-field" style="width: auto;">
+                                <select class="form-select sm">
+                                    <option>진행연도</option>
+                                </select>
+                                <select class="form-select">
+                                    <option>공고명</option>
+                                </select>
+                                <button class="ml10 dull-blue btn sm sm-h solidbtn">통계보기</button>
+                            </div>
+                        </div>
+                        <div class="card-wrap">
+                            <ul class="flex-box statquick-box">
+                                <li>
+                                    <div class="statquick-menu grey">
+                                        <div class="label-box">
+                                            <strong class="label">지원율</strong><span class="label-ico"><img src="../../../content/images/sub/statistics/statquick-ico-01.png" alt="지원율 아이콘"></span>
+                                        </div>
+                                        <div class="info-box">
+                                            <strong class="pt15 efw400 info-tit">100:1</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="statquick-menu blue">
+                                        <div class="label-box">
+                                            <strong class="label">평균 나이</strong><span class="label-ico"><img src="../../../content/images/sub/statistics/statquick-ico-02.png" alt="평균 나이 아이콘"></span>
+                                        </div>
+                                        <div class="info-box">
+                                            <strong class="pt15 efw400 info-tit">22세</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="statquick-menu blue">
+                                        <div class="label-box">
+                                            <strong class="label">평균 학력</strong><span class="label-ico"><img src="../../../content/images/sub/statistics/statquick-ico-03.png" alt="평균 학력 아이콘"></span>
+                                        </div>
+                                        <div class="info-box">
+                                            <strong class="pt15 efw400 info-tit">학사</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="statquick-menu blue">
+                                        <div class="label-box">
+                                            <strong class="label">성별 비율</strong><span class="label-ico"><img src="../../../content/images/sub/statistics/statquick-ico-04.png" alt="성별 비율 아이콘"></span>
+                                        </div>
+                                        <div class="info-box">
+                                            <dl class="flex-box flex-align-cnt">
+                                                <dd class="fc-red efw400">48%</dd>
+                                                <dt>480명</dt>
+                                            </dl>
+                                            <dl class="flex-box flex-align-cnt">
+                                                <dd class="fc-green efw400">52%</dd>
+                                                <dt>520명</dt>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="statquick-menu green">
+                                        <div class="label-box">
+                                            <strong class="label">장애/보훈대상</strong><span class="label-ico"><img src="../../../content/images/sub/statistics/statquick-ico-05.png" alt="장애/보훈대상 아이콘"></span>
+                                        </div>
+                                        <div class="info-box">
+                                            <dl class="flex-box flex-align-cnt">
+                                                <dt>장애</dt>
+                                                <dd>6명</dd>
+                                            </dl>
+                                            <dl class="flex-box flex-align-cnt">
+                                                <dt>보훈</dt>
+                                                <dd>3명</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- //card wrap : 상단 지원통계 패널 -->
+                        <div class="card-wrap">
+                            <div class="card">
+                                <ul class="flex-box comn-tab-box col3">
+                                    <li><span class="comn-tab on" data-stat="basic">기본정보</span></li>
+                                    <li><span class="comn-tab" data-stat="academic">학력정보</span></li>
+                                    <li><span class="comn-tab" data-stat="evalue">평가정보</span></li>
+                                </ul>
+                                <div class="dbstat-wrap basic" style="display: block;">
+                                    <div class="flex-box flex stat-detail-box">
+                                        <div class="el">
+                                            <span class="label">연령</span>
+                                            <strong class="stat-rank1st"><span>24세</span></strong>
+                                            <div class="module-wrap"><img src="../../../content/images/sub/statistics/module-list-graph-01.png" alt=""></div>
+                                        </div>
+                                        <div class="el">
+                                            <span class="label">최종학력</span>
+                                            <strong class="stat-rank1st"><span>학사</span></strong>
+                                            <div class="module-wrap"><img src="../../../content/images/sub/statistics/module-list-graph-02.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div> <!-- //기본정보 -->
+                                <div class="dbstat-wrap academic">
+                                    <div class="stat-detail-box">
+                                        <div class="flex-box flex-wrap stat-rank-tbl">
+                                            <div class="el">
+                                                <span class="label">학교정보</span>
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td colspan="2" class="txt-lt"><strong class="stat-rank1st">성균관대학교</strong></td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">2위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">3위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">4위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">5위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl norank1st-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">6위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">7위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">8위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">9위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">10위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">11위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">12위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">13위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">14위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">15위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">16위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">17위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">18위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">19위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">20위</td>
+                                                        <td class="txt-lt">에이대학교</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="txt-rt card-btn-box noline">
+                                            <span class="black btn md sm-h solidbtn">더 보기</span>
+                                        </div>
+                                    </div> <!-- //학교정보 -->
+                                    <div class="stat-detail-box">
+                                        <div class="flex-box flex-wrap stat-rank-tbl">
+                                            <div class="el">
+                                                <span class="label">주전공</span>
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td colspan="2" class="txt-lt"><strong class="stat-rank1st">컴퓨터과학</strong></td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">2위</td>
+                                                        <td class="txt-lt">메이크업</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">3위</td>
+                                                        <td class="txt-lt">경찰행정</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">4위</td>
+                                                        <td class="txt-lt">법학</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">5위</td>
+                                                        <td class="txt-lt">인문학</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl norank1st-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">6위</td>
+                                                        <td class="txt-lt">에이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">7위</td>
+                                                        <td class="txt-lt">비이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">8위</td>
+                                                        <td class="txt-lt">씨이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">9위</td>
+                                                        <td class="txt-lt">디이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">10위</td>
+                                                        <td class="txt-lt">에프학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">11위</td>
+                                                        <td class="txt-lt">컴퓨터공학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">12위</td>
+                                                        <td class="txt-lt">메이크업</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">13위</td>
+                                                        <td class="txt-lt">경찰행정</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">14위</td>
+                                                        <td class="txt-lt">법학</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">15위</td>
+                                                        <td class="txt-lt">인문학</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="el">
+                                                <table class="list-tbl">
+                                                    <colgroup>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 40%;">
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">16위</td>
+                                                        <td class="txt-lt">에이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">17위</td>
+                                                        <td class="txt-lt">비이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">18위</td>
+                                                        <td class="txt-lt">씨이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">19위</td>
+                                                        <td class="txt-lt">디이학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="efw500 txt-lt">20위</td>
+                                                        <td class="txt-lt">에프학과</td>
+                                                        <td>220명</td>
+                                                        <td>38%</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="txt-rt card-btn-box noline">
+                                            <span class="black btn md sm-h solidbtn">더 보기</span>
+                                        </div>
+                                    </div> <!-- //주전공 -->
+                                </div> <!-- //학력정보 -->
+                                <div class="dbstat-wrap evalue">
+                                    <div class="flex-box flex stat-detail-box">
+                                        <div class="el">
+                                            <span class="label">지원율</span>
+                                            <div class="module-wrap"><img src="../../../content/images/sub/statistics/module-list-graph-03.png" alt=""></div>
+                                        </div>
+                                        <div class="el">
+                                            <span class="label">합격점수</span>
+                                            <div class="module-wrap"><img src="../../../content/images/sub/statistics/module-list-graph-04.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div> <!-- //평가정보 -->
+                            </div>
+                        </div> <!-- //card wrap : 기본정보 / 학력정보 / 평가정보 -->
+                    </div> <!-- //grid -->
+                </div> <!-- //page wrap END -->
+                <!-- footer START -->
+                <footer>
+                    <div class="grid">
+                        <div class="flex-box flex-spc-btw ft-wrap">
+                            <div class="lt">
+                                <span class="copyright">COPYRIGHT©NHR COMMUNICATIONS. ALL RIGHTS RESERVED.</span>
+                            </div>
+                            <div class="rt">
+                                <span class="ft-info">help-n@nhrcomm.com</span><span class="ft-info">02-735-1141</span>
+                            </div>
+                        </div>
+                    </div> <!-- //grid -->
+                </footer>
+                <!-- //footer END -->
+            </main>
+            <!-- //right page area END -->
+        </div>
+        <!-- //wrapper END -->
+        <script>
+            $(document).ready(function(){
+
+                //공고현황 탭 이벤트
+                var daStatWrap = $('.dbstat-wrap');
+                var dbStatTab = $('.comn-tab');
+
+                dbStatTab.on('click', function(){
+                    var dbStatClass = $(this).attr('data-stat');
+                    var dbStat = $('.' + dbStatClass);
+
+                    dbStatTab.not($(this)).removeClass('on');
+                    $(this).addClass('on');
+
+                    daStatWrap.hide();
+                    dbStat.show();
+                });
+            });
+        </script>
+    </body>
+</html>
