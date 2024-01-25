@@ -28,7 +28,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="../../content/styles/skinA.css" rel="stylesheet">
 
-        <script src="../../content/scripts/jquery-1.12.4.min.js"></script>
+        <!-- Vue.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="../../content/scripts/common.js"></script>
         <!--[if lt IE 9]>
         <script src="../../../content/scripts/html5shiv.js"></script>
@@ -415,6 +418,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--대학원(박사)-->
                                 <div class="form-add-box">
                                     <span class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
                                     <div class="form-row">
@@ -517,6 +521,7 @@
                                         </div>
                                     </div>
                                 </div> <!-- //form add box-->
+                                <!--대학원(학사)-->
                                 <div class="form-add-box">
                                     <span class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
                                     <div class="form-row">
@@ -653,6 +658,7 @@
                                         </div>
                                     </div>
                                 </div> <!-- //form add box-->
+                                <!--고등학교-->
                                 <div class="form-add-box">
                                     <span class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
                                     <div class="form-row">
@@ -818,26 +824,23 @@
                                 <!-- //form add box --> 
                             </div> <!-- //form table -->
                         </div> <!-- //form wrap : 경력사항 -->
-                        <div class="form-wrap" data-form="5">
+                        <div id="vuecareer" class="form-wrap" data-form="5">
                             <div class="form-tbl">
                                 <strong class="form-tbl-tit">수상/자격증/<span class="txt-break">어학</span></strong>
-                                <div class="form-add-box">
-                                    <span class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
+                                <div v-for="(formData, index) in formList" :key="index" class="form-add-box">
+                                    <span @click="removeForm(index)" class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
                                     <div class="form-row">
                                         <span class="form-label">항목선택</span>
                                         <div class="form-field">
-                                            <select class="form-select">
-                                                <option selected>자격증/면허증</option>
-                                                <option>공인외국어시험</option>
-                                                <option>외국어 활용 능력</option>
-                                                <option>수상내역/공모전</option>
+                                            <select class="form-select" v-model="formData.selectedItem">
+                                                <option v-for="item in items" :key="item">{{ item }}</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <span class="form-label">자격증명</span>
                                         <div class="form-field">
-                                            <input type="text" class="form-input">
+                                            <input type="text" class="form-input" v-model="formData.certificationName">
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -854,38 +857,6 @@
                                     </div>
                                     <div class="form-row">
                                         <span class="form-label">등록번호</span>
-                                        <div class="form-field">
-                                            <input type="text" class="form-input">
-                                        </div>
-                                    </div>
-                                </div> <!-- //form add box -->
-                                <div class="form-add-box">
-                                    <span class="grey btn solidbtn  formdel-btn"><span class="label">삭제</span></span>
-                                    <div class="form-row">
-                                        <span class="form-label">항목선택</span>
-                                        <div class="form-field">
-                                            <select class="form-select">
-                                                <option>자격증/면허증</option>
-                                                <option selected>공인외국어시험</option>
-                                                <option>외국어 활용 능력</option>
-                                                <option>수상내역/공모전</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <span class="form-label">언어선택</span>
-                                        <div class="form-field">
-                                            <input type="text" class="form-input">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <span class="form-label">발행처/기관</span>
-                                        <div class="form-field">
-                                            <input type="text" class="form-input">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <span class="form-label">시험종류</span>
                                         <div class="form-field">
                                             <input type="text" class="form-input">
                                         </div>
@@ -901,21 +872,9 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-row">
-                                        <span class="form-label">취득일</span>
-                                        <div class="form-field">
-                                            <input type="text" class="form-input">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <span class="form-label">등록번호</span>
-                                        <div class="form-field">
-                                            <input type="text" class="form-input">
-                                        </div>
-                                    </div>
-                                </div> <!-- //form add box -->
+                                </div> <!-- //form add box -->                                
                                 <div class="formadd-btn-wrap">
-                                    <span class="grey btn comnbtn sm-h solidbtn formadd-btn"><span class="label">추가</span></span>
+                                    <span  @click="addForm" class="grey btn comnbtn sm-h solidbtn formadd-btn"><span class="label">추가</span></span>
                                 </div> <!-- //form add button -->
                             </div> <!-- //form tabel -->
                         </div> <!-- //form wrap : 수상,자격증,어학 -->
@@ -1370,6 +1329,41 @@
             </div><!-- //modal wrap -->
         </div>
         <!-- //modal END -->
+
+        <script>
+            new Vue({
+                el: '#vuecareer',
+                data: {
+                    items: ["자격증/면허증", "공인외국어시험", "외국어 활용 능력", "수상내역/공모전"],
+                    formList: [
+                        // 초기에 하나의 양식을 가지고 시작할 수 있습니다.
+                        {
+                            selectedItem: "공인외국어시험",
+                            certificationName: ""
+                            // (이하 생략) 필요에 따라 추가 필드를 포함하세요.
+                        },
+                        {
+                            selectedItem: "자격증/면허증",
+                            certificationName: ""
+                            // (이하 생략) 필요에 따라 추가 필드를 포함하세요.
+                        }
+                    ]
+                },
+                methods: {
+                    addForm() {
+                        this.formList.push({
+                            selectedItem: "자격증/면허증",
+                            certificationName: ""
+                            // (이하 생략) 필요에 따라 추가 필드를 포함하세요.
+                        });
+                    },
+                    removeForm(index) {
+                        this.formList.splice(index, 1);
+                    }
+                }
+            });
+        </script>
+
         <script>
             $(document).ready(function(){
                 //form modal 
