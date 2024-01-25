@@ -992,7 +992,7 @@ mobile navigation
         border-radius: 2rem;
     }
     .monav-list {
-        padding: 6rem;
+        padding: 2rem 1.5rem 15rem;
     }
     .monav-list li {
         padding: 1.3rem 0;
