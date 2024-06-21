@@ -1,24 +1,34 @@
+
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Save Image to Gallery</title>
+    <title>Save Image to Photos</title>
 </head>
 <body>
-    <img id="imageToSave" src="https://shimpark.github.io/LevelUp/content/images/common/main-a-ci.png" alt="Image to Save" width="300">
-    <button id="saveButton">Save Image to Gallery</button>
+    <img id="imageToShare" src="https://shimpark.github.io/LevelUp/content/images/common/main-a-ci.png" alt="Image to Share" width="300">
+    <button id="shareButton">Save Image to Photos</button>
 
     <script>
-        document.getElementById('saveButton').addEventListener('click', function() {
-            var img = document.getElementById('imageToSave');
-            var url = img.src;
-            var link = document.createElement('a');
-            link.href = url;
-            link.download = 'image.png'; // Set the desired filename here
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        document.getElementById('shareButton').addEventListener('click', async function() {
+            const img = document.getElementById('imageToShare');
+            const blob = await fetch(img.src).then(res => res.blob());
+            const file = new File([blob], 'image.jpg', { type: blob.type });
+
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                navigator.share({
+                    files: [file],
+                    title: 'Image',
+                    text: 'Check out this image!'
+                })
+                .then(() => console.log('Image shared successfully'))
+                .catch(err => console.error('Error sharing image:', err));
+            } else {
+                alert('Sharing not supported on this browser.');
+            }
         });
     </script>
 </body>
