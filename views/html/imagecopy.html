@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Image to Gallery</title>
+</head>
+<body>
+    <img id="imageToSave" src="https://shimpark.github.io/LevelUp/content/images/common/main-a-ci.png" alt="Image to Save" width="300">
+    <button id="saveButton">Save Image to Gallery</button>
+
+    <script>
+        document.getElementById('saveButton').addEventListener('click', function() {
+            var img = document.getElementById('imageToSave');
+            var url = img.src;
+            var link = document.createElement('a');
+            link.href = url;
+            link.download = 'image.png'; // Set the desired filename here
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
